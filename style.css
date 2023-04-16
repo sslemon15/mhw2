@@ -1,0 +1,185 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+h1{
+    text-align: center;
+    font-style: italic;
+}
+
+header div span {
+    background: linear-gradient(-45deg, #d90808,#ffec17);
+    border: 2px solid rgb(246, 119, 60);
+    margin-right: 0.5em;
+
+}
+
+header{
+    background-color: rgb(32, 29, 25);
+}
+
+header h1{
+    color: whitesmoke;
+    padding-left: 0.5em;
+}
+
+section[data-index="1"]{
+    background-image: url(./d1.png);
+    background-position: center;
+}
+  
+section[data-index="2"]{
+    background-image: url(./d2.png);
+    background-position: center;
+    background-size: cover;  
+}
+
+section[data-index="3"]{
+    background-image: url(./d3.png);
+    background-position: center;
+}
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    align-content: space-between;
+    
+
+  }
+  :root{
+    --grid-size: 700px;
+    --margin-size: 20px;
+    --square-size: calc((( var(--grid-size) * (32.5) ) / 100) - var(--margin-size));
+}
+ 
+
+  .choice-grid div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;  
+    box-sizing: content-box;
+    width: var(--square-size);
+    margin-bottom: 20px;
+    padding: 10px;
+    
+
+  }
+
+  .choice-grid div img{
+    width: 100%;
+    height: 100%;
+    
+
+  }
+
+
+  .choice-grid img.checkbox {
+    width: 20px;
+    height: 20px;
+   
+    
+  }
+
+  #risultato{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+  }
+
+  #risultato .title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 18px;
+  }
+
+  #risultato .contents{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 18px;
+  }
+
+  #risultato a.bottom{
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    background-color: #cecece;
+    text-decoration: none;
+    height: 50px;
+    padding: 10px;
+    color: black;
+  }
+
+  #risultato a.bottom:hover{
+    background-color: #e0e0e0;
+    font-weight: bold;
+  
+  }
+
+  .choice-grid div.sfond{
+    background-color: #cfe3ff;
+  }
+
+  .choice-grid div.opacity{
+    opacity: 0.6;
+  }
+
+  @media (max-width: 700px) {
+
+    article{
+        width: 95%;
+    }
+    header h1{
+      font-size: 1.2rem;
+      letter-spacing: 4px;
+    }
+
+   
+
+    h1{
+        font-size: 1.7rem;
+    }
+  }
+
+ 
+
+  @media (max-width: 700px) {
+    article header div span{
+      display: none;
+    }
+  
+
+    
+
+    .question-name {
+        height: 300px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .question-name h1 {
+        font-size: 1.8rem;
+        padding: 10px;
+        max-width: 75%;
+      }
+
+      :root{
+        --grid-size: 100%;
+        --margin-size: 20px;
+        --square-size: calc((( var(--grid-size) * (32.5) )/ 100) - var(--margin-size));
+    }
+
+}
+
+@media (max-width: 500px) {
+    :root{
+        --grid-size: 100%;
+        --margin-size: 20px;
+        --square-size: calc((( var(--grid-size) * (49) )/ 100) - var(--margin-size));
+    }
+
+
+    #risultato .title{
+        font-size: 1.7rem;
+    }
+}
